@@ -3,14 +3,15 @@
 # Johnny, the total of your purchase is $1,688.70
 
 def calcTotal(amt,tax,name):
-    mytotal = amt * (1+tax)
-    print(f"{myname}, the total of your purchase is ${total:,.2f}")
+    tax=(1+thetax)
+    mytotal=price*tax
+    print(f"{myname}, the total of your purchase is ${mytotal:,.2f}")
 
 myname = 'Johnny'
-price = 1,560
-thetax = 8.25%
+price = 1560
+thetax = 0.0825
 
-calcTotal(thetax,price,name)
+calcTotal(thetax,price,myname)
 
 
 
@@ -20,9 +21,8 @@ calcTotal(thetax,price,name)
 # print out ONLY the integers in the list below #
 list1 = [1,'two',3.2,'four',5]
 
-for i in list1:
-    print(i)
-
+list2 = [i for i in list1 if not isinstance(i, str)] 
+print(list2)
 
 
 
@@ -34,6 +34,7 @@ for i in list1:
 
 from plotly.graph_objs import Scattergeo, Layout
 from plotly import offline
+
 
 lons = [-97.121041]
 lats = [31.546872]
