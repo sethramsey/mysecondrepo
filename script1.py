@@ -21,8 +21,11 @@ calcTotal(thetax,price,myname)
 # print out ONLY the integers in the list below #
 list1 = [1,'two',3.2,'four',5]
 
-list2 = [i for i in list1 if not isinstance(i, str)] 
-print(list2)
+#list2 = [i for i in list1 if not isinstance(i, str)] 
+
+for i in list1:
+    if type(i) == int:
+        print(i)
 
 
 
